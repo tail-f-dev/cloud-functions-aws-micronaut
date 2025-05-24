@@ -89,6 +89,13 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <scm>
+        <connection>scm:git:git@github.com:tail-f-dev/cloud-functions-aws-micronaut.git</connection>
+        <url>https://github.com/tail-f-dev/cloud-functions-aws-micronaut</url>
+        <developerConnection>scm:git:git@github.com:tail-f-dev/cloud-functions-aws-micronaut.git</developerConnection>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
