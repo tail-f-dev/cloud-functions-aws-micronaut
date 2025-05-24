@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Build
+- **pom:** add maven plugin to format version tag
+
 ### Doc
 - **changelog:** add changelog
 
