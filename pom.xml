@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.tailf</groupId>
     <artifactId>cloud-functions-aws-micronaut</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>${packaging}</packaging>
 
     <parent>
@@ -93,7 +93,7 @@
         <connection>scm:git:git@github.com:tail-f-dev/cloud-functions-aws-micronaut.git</connection>
         <url>https://github.com/tail-f-dev/cloud-functions-aws-micronaut</url>
         <developerConnection>scm:git:git@github.com:tail-f-dev/cloud-functions-aws-micronaut.git</developerConnection>
-      <tag>cloud-functions-aws-micronaut-0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <build>
