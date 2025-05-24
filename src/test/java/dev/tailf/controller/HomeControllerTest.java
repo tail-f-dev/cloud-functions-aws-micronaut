@@ -1,4 +1,4 @@
-package dev.tailf;
+package dev.tailf.controller;
 
 import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyRequestEvent;
 import io.micronaut.function.aws.proxy.payload1.ApiGatewayProxyRequestEventFunction;
@@ -27,11 +27,11 @@ class HomeControllerTest {
     @Test
     void testHandler() {
         APIGatewayProxyRequestEvent request = new APIGatewayProxyRequestEvent();
-        request.setPath("/");
+        request.setPath("/micronaut");
         request.setHttpMethod(HttpMethod.GET.toString());
         var response = handler.handleRequest(request, new MockLambdaContext());
 
         assertEquals(HttpStatus.OK.getCode(), response.getStatusCode());
-        assertEquals("{\"message\":\"Hello World\"}", response.getBody());
+        assertEquals("{\"message\":\"Hello AWS Lambda Function with Micronaut\"}", response.getBody());
     }
 }
